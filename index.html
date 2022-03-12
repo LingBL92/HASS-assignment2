@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+  <html>
+
+  <style>
+    .para {
+      <!border: 1px solid black;>
+      margin: auto;
+      padding: 0px 30px;
+      text-align: left;
+    }
+
+    .intro {
+      overflow-wrap: break-word;
+      padding: 10px 200px;
+      text-align: center;
+    }
+
+    .img {
+      display:block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 75%;
+      padding: 30px 20px
+    }
+
+  table {
+      margin-left: auto;
+      margin-right: auto;
+      border-collapse: collapse;
+      border: 1px solid rgb(100, 100, 100);
+      letter-spacing: 1px;
+      font-size: 17px;
+      text-align: left;
+      width: 80%;
+      padding: 50px 0px;
+    }
+
+  td,th {
+      border: 1px solid rgb(100, 100, 100);
+      padding: 10px 10px;
+  }
+
+  td {
+    font-size: 15px;
+    text-align: left;
+  }
+
+  </style>
+
+  <head>
+    <title> Critique of Viz examples </title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="mystyle.css">
+  </head>
+
+  <body id="body">
+    <h1 style="text-align:center; color:#111111;font-size:30px;"> Critique of viz examples <br></h1>
+    <div align="center" class="main" id="main"></div>
+    <p style="text-align:center; font-size:20px;">
+      <br>Visualisation of <a href="https://informationisbeautiful.net/visualizations/how-to-get-the-world-to-netzero-by-2050/">net carbon zero.</a>
+    </p>
+    <p class="intro">
+    <i>Net zero carbon describes strategies to first reduce and build towards zero carbon. Information about carbon emissions is presented in various formats and they come together to tell a story about getting the world to net carbon zero.
+    </i></p>
+  </body>
+
+  <img src="net zero carbon part 1.png" alt="net1" class="img"></img>
+
+  <table>
+    <tr>
+      <th width=20%> Story flow </th>
+      <th width=40%> Data </th>
+      <th width=40%> Idiom </th>
+    </tr>
+
+    <tr>
+      <td>
+        <b> Step 1</b>
+        <br>The goal is to describe how 4 different components are concurrently considered such that 2 main routes towards zero carbon are derived.
+      </td>
+      <td>
+        <b>Confusing data</b><br>
+        Data in this case are the components and routes. The selection of these components are quite confusing and it is difficult to appreciate the visualisation.
+        A lot of the namings seem to overlap and it adds to data condusion.
+      </td>
+      <td>
+        <b>Colour junk</b>
+        <br>Chart junk exists as colours. There are too many different colours and they do not combine to have any meaning at all.
+        <br><b>Lack of hierachy</b>
+        <br>The arrangement of icons do not convey the idea of a combination and they are all sized the same. The lack of hierachy makes it difficult to see a flow of events from left to right.
+        <br><b>Improvement</b>
+        <br>A single colour for the 4 components could make the story point more obvious.
+        <br>Perhaps placing the 2 routes side by side (instead of top and bottom) could be useful, as it breaks the symmetry of the 4 circles on the left.
+      </td>
+    </tr>
+  </table>
+
+  <img src="net zero carbon part 2.png" alt="net2" class="img"></img>
+
+  <table>
+    <tr>
+      <th width=20%> Story flow </th>
+      <th width=40%> Data </th>
+      <th width=40%> Idiom </th>
+    </tr>
+
+    <tr>
+      <td>
+        <b> Step 2</b>
+        <br> This part aims to show the main contributors of carbon emissions and their respective smaller contributors.
+      </td>
+      <td>
+        <b>Clear quantitative values</b><br>
+        Data on percentages and contributors are clear and consistent across all different fields.
+      </td>
+      <td>
+        <b>Colour works</b>
+        <br>In this case, the colours work well in separating the main contributors. Perhaps colours could be chosen to have more contrast.
+        <br><b>Bad display of relative percentages</b>
+        <br>Using rectangle sizes is really bad in showing relative differences. It is difficult to read size on 2 dimensions and we need to constantly refer to the numbers.
+        <br><b>Improvement</b>
+        <br>Using a simple bar chart would be more useful in showing relative differences across all contributors.
+        <br>Stacked bar charts could be useful too, with the smaller contributors coloured using different hues of the main colour groupings.
+      </td>
+    </tr>
+  </table>
+
+  <img src="net zero carbon part 3.png" alt="net3" class="img"></img>
+
+  <table>
+    <tr>
+      <th width=20%> Story flow </th>
+      <th width=40%> Data </th>
+      <th width=40%> Idiom </th>
+    </tr>
+
+    <tr>
+      <td>
+        <b> Step 3</b>
+        <br> This part shows potential areas for reducing emissions from the different main contributors.
+      </td>
+      <td>
+        <b>Clear quantitative values?</b><br>
+        The quantitative percentages are uniformly presented. However, percentages are relative and it is difficult to compare across different contributors as they have different initial contributions.
+        The most important statistic for halving emissions is a small bar at the bottom.
+        <b>Improvement</b>
+        <br>The total emissions reduced should be presented at the top or more clearly.
+      </td>
+      <td>
+        <b>Colour works</b>
+        <br>In this case, the colours work well in separating the main contributors. Perhaps colours could be chosen to have more contrast.
+        <br><b>Bad display of relative percentages</b>
+        <br>Using circle sizes is really bad in showing relative differences. It is difficult to read size on 2 dimensions and we need to constantly refer to the numbers.
+        <br><b>Improvement</b>
+        <br>Using a line scatter plot could combine both the total reduction and the various percentage decreases.
+        <br>A line scatter plot could also make more sense in visualising percentage decrease.
+      </td>
+    </tr>
+  </table>
+
+  <img src="net zero carbon part 4a.png" alt="net4" class="img"></img>
+
+  <table>
+    <tr>
+      <th width=20%> Story flow </th>
+      <th width=35%> Data </th>
+      <th width=45%> Idiom </th>
+    </tr>
+
+    <tr>
+      <td>
+        <b> Step 4</b>
+        <br> This final part wants to show different ways of reaching net zero by 2050.
+      </td>
+      <td>
+        <b>Ideas as data</b><br>
+        The data in this case are the different ideas and stratgies.
+        Data is arranged based on priority and sized by impact factor.
+      </td>
+      <td>
+        <b>Graphic illegibility</b>
+        <br>While the past few sections had icons and graphics to provide more intuitive reading, this part just goes for all text.
+        <br><b>Confusing heirachy</b>
+        <br>The data in this case are all qualitative. This is the chance to use the rectangles and circles from previous parts. However, this graphic follows a stacked bar method (Which is better for quantitive data).
+        <br><b>Improvement</b>
+        <br>Using bubbles and circles would be so much more useful, firstly to convey some optimism in ideas, secondly to just demonstrate a spread of options with various impact factors.
+        <br>Priority could then be coloured with hues, so as to keep the hierachy of the contribution groups.
+      </td>
+    </tr>
+    </table>
+
+    <p> <br> </p>
+    <hr size="5px" color="black" align="center" width="90%"></hr>
+
+    <body id="body">
+      <p style="text-align:center; font-size:20px;">
+        <br>Visualisation of <a href="https://informationisbeautiful.net/visualizations/vitamin-d/">Vitamin D.</a>
+      </p>
+      <p class="intro">
+      <i>Vitamin D comes from the sun and it affects the human based on various parameters and location. There is an upward trend of vitamin D deficiency and data is shown to highlight its importance.</i>
+      </p>
+    </body>
+
+    <img src="Vitamin-D2.jpg" alt="vit1" class="img"></img>
+
+    <table>
+      <tr>
+        <th width=20%> Story flow </th>
+        <th width=40%> Data </th>
+        <th width=40%> Idiom </th>
+      </tr>
+
+      <tr>
+        <td>
+          <b> Step 1 & 2</b>
+          <br>The visualisation wants to demonstrate the impact of time and the parameters which contribute to a decent amount of sun exposure.
+        </td>
+        <td>
+          <b>Straightforward data</b><br>
+          Data is clear, the units of minutes is straightforward.
+          Feels unneccessary to include the information on SPF 30+.
+        </td>
+        <td>
+          <b>Confusing structure</b>
+          <br>The top half with the clocks and coloured portions are very clear. But placing another 3 different types of information below the clocks make it confusing.
+          It seems like we only need to consider skin colour in winter.
+          <br><b>Improvement</b>
+          <br>The idioms could be restructured based on the 2 main parameters: Human parameters and exposure time.
+          <br>This way it is clear that the data is actually about different points.
+        </td>
+      </tr>
+    </table>
+
+    <img src="Vitamin-D3.jpg" alt="vit2" class="img"></img>
+
+    <table>
+      <tr>
+        <th width=20%> Story flow </th>
+        <th width=40%> Data </th>
+        <th width=40%> Idiom </th>
+      </tr>
+
+      <tr>
+        <td>
+          <b> Step 3</b>
+          <br>The visualisation wants to demonstrate the impact of location on the amount of sun exposure.
+        </td>
+        <td>
+          <b>Location and UV data</b><br>
+          Location data is clear and the map projection is a familiar one.
+          It is confusing to read the UV scale as increasingly less, could be simplified with decreasing.
+        </td>
+        <td>
+          <b>Lacking legend</b>
+          <br>Although the colours are quite clear, yellow means "in the sun", a legend will help to make it clearer.
+          <br><b>Improvement</b>
+          <br>There is an opportunity to combine this graphic with the clock idioms, since the sun positions can coincide with the seasonal exposure times.
+        </td>
+      </tr>
+    </table>
+
+    <img src="Vitamin-D4.jpg" alt="vit3" class="img"></img>
+
+    <table>
+      <tr>
+        <th width=20%> Story flow </th>
+        <th width=40%> Data </th>
+        <th width=40%> Idiom </th>
+      </tr>
+
+      <tr>
+        <td>
+          <b> Step 4</b>
+          <br>The visualisation presents various data on vitamin D deficiency.
+        </td>
+        <td>
+          <b>Difficult to understand data</b><br>
+          The percentages could be helpful and clear. But It would be helpful to see the total population numbers.
+          The difference between inadequate and deficient is also arbitrary. Feels like deficint is a part of inadequate?
+        </td>
+        <td>
+          <b>Confusing bar directions</b>
+          <br>The bar directions feel like they are describing diverging stories, although they are along the same line of inadequacy.
+          <br><b>Improvement</b>
+          <br>The bars can be stacked, if the subsets are not independent. Total population numbers can be expressed as part of the stacked bar.
+        </td>
+      </tr>
+    </table>
+
+    <img src="Vitamin-D5.jpg" alt="vit4" class="img"></img>
+
+    <table>
+      <tr>
+        <th width=20%> Story flow </th>
+        <th width=40%> Data </th>
+        <th width=40%> Idiom </th>
+      </tr>
+
+      <tr>
+        <td>
+          <b> Step 5</b>
+          <br>The visualisation wants to show the changing opinions on recommended daily vitamin D intake.
+        </td>
+        <td>
+          <b>Confusing data</b><br>
+          It is difficult to make out what is the max recommended amount of vitamin D.
+          Is it 100 or 250 mcg?
+        </td>
+        <td>
+          <b>Confusing structure</b>
+          <br>The 5 circles arranged in a line tells a story of increase. But the large one below feels out of place and is difficult to understand.
+          <br><b>Improvement</b>
+          <br>Since its meant to show increase, a line scatter plot or a bar chart is good enough. Sizing using circles is difficult to read.
+          The overdose comment could be drawn to the inner circle, perhaps that will improve understanding.
+        </td>
+      </tr>
+    </table>
+
+    <img src="Vitamin-D6.jpg" alt="vit5" class="img"></img>
+
+    <table>
+      <tr>
+        <th width=20%> Story flow </th>
+        <th width=40%> Data </th>
+        <th width=40%> Idiom </th>
+      </tr>
+
+      <tr>
+        <td>
+          <b> Step 6</b>
+          <br>This portion shows how vitamin D is useful for defending against common virus and sickness.
+        </td>
+        <td>
+          <b>Arbitrary data</b><br>
+          Perhaps the health problems are the top few in some survey. Because it is redundant to show heart disease and depression in the no evidence category.
+          If no evidence, why not remove it?
+        </td>
+        <td>
+          <b>Conflicting idioms</b>
+          <br>There is one main direction, which is the strength of evidence (from left to right).
+          However, the bubbles height makes it slightly confusing. Although they are roughly arranged to follow the strength of evidence as well.
+          <br><b>Improvement</b>
+          <br>I think the axis can be made more obvious and placed under the categories of slight, inconclusive...
+          Then the bubbles can be flushed towards the axis. This will make the visualisation clearer in terms of what it is trying to convey.
+        </td>
+      </tr>
+    </table>
+
+    <p> <br> </p>
+    <hr size="5px" color="black" align="center" width="90%"></hr>
+    
+    <p class="intro">
+    <i><br>Assignment 2 - Ling Ban Liang
+    </i></p>
